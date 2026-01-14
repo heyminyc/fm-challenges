@@ -1,0 +1,137 @@
+/* bai-jamjuree-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/bai-jamjuree-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* bai-jamjuree-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/bai-jamjuree-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --c-white: hsl(0, 0%, 100%);
+  /* Primary */
+  --c-green-500: hsl(171, 66%, 44%);
+  --c-blue-100: hsl(233, 100%, 69%);
+  /* Neutral */
+  --c-gray-700: hsl(210, 10%, 33%);
+  --c-gray-500: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Styling */
+
+header img {
+  width: 100%;
+}
+
+.hero {
+  width: 600px;
+  text-align: center;
+  height: 70vh;
+  margin-top: -181.5px;
+  margin-inline: auto;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  margin-bottom: 1rem;
+  color: var(--c-gray-700);
+}
+
+.description {
+  margin-bottom: 2rem;
+  color: var(--c-gray-500);
+}
+
+.download {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ios,
+.mac {
+  color: var(--c-white);
+  background-color: var(--c-green-500);
+  padding: 0.75rem 1.75rem;
+  border-radius: 1.75rem;
+}
+
+.mac {
+  background-color: var(--c-blue-100);
+}
+
+.services-description {
+  text-align: center;
+  width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.services-description h2 {
+  margin-bottom: 1rem;
+  color: var(--c-gray-700);
+}
+
+.services-description p {
+  color: var(--c-gray-500);
+  margin-bottom: 4rem;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+
+.services-list img {
+  margin-left: -5%;
+  width: 50%;
+}
+
+.sercices-cards {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-height: 100%;
+  gap: 4rem;
+}
+
+.service-card h3 {
+  color: var(--c-gray-700);
+}
+
+.service-card p {
+  color: var(--c-gray-500);
+}
