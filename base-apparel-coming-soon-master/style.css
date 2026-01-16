@@ -1,0 +1,126 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  /* Colors */
+  /* Primary */
+  --c-pink-400: hsl(0, 36%, 70%);
+  --c-red-500: hsl(0, 93%, 68%);
+
+  /* Neutral */
+  --c-gray-900: hsl(0, 6%, 24%);
+
+  /* How to turn gradient into variables */
+  /* Gradients */
+  /* --g-linear-1: ; */
+  /* --g-linear-2: ; */
+  /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+  /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--c-gray-900);
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  min-height: 100vh;
+}
+
+/* Style */
+header {
+  padding: 2rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-title,
+.hero p,
+.hero form {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-block-start: 2rem;
+}
+
+.hero-title span {
+  color: var(--c-pink-400);
+  font-weight: 300;
+}
+
+.hero-description {
+  color: var(--c-pink-400);
+  padding-inline: 1.75rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: none;
+}
+
+input {
+  padding: 1rem 7rem 1rem 1.25rem;
+  border: 1px solid var(--c-pink-400);
+  border-radius: 2rem;
+  box-shadow: 2px 6px 16px hsla(0, 36%, 70%, 0.4);
+}
+
+input:focus {
+  border: 1px solid var(--c-red-500);
+}
+
+input::placeholder {
+  color: var(--c-pink-400);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+}
+
+button {
+  border: none;
+  /* color: white; */
+  padding: 15px 2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin-left: -4rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 2px 6px 12px var(--c-pink-400);
+}
+
+button:hover {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}

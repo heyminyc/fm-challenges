@@ -1,0 +1,144 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  /* Colors */
+  --c-purple-700: hsl(257, 40%, 49%);
+  --c-magenta-400: hsl(300, 69%, 71%);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  background-color: var(--c-purple-700);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.logo {
+  width: 170px;
+  padding: 2rem 0 4rem 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2.25rem;
+  gap: 3rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16.5px;
+}
+
+.btn {
+  padding: 0.75rem 4rem;
+  border: none;
+  border-radius: 4rem;
+  box-shadow: 4px 4px 8px hsla(0, 0%, 0%, 0.4);
+  color: var(--c-purple-700);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--c-magenta-400);
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 4rem;
+}
+
+.icon {
+  border: 1px solid white;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;
+  }
+  .logo {
+    width: 240px;
+    padding: 2rem 0 6rem 4rem;
+  }
+  main {
+    flex-direction: row;
+    margin-inline: 4rem;
+  }
+  main img {
+    width: 50vw;
+  }
+  .intro {
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .social-links {
+    justify-content: flex-end;
+    margin-inline-end: 4rem;
+    margin-block-start: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  .social-links {
+    margin-inline-end: 6rem;
+  }
+}
